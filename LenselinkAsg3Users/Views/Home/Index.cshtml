@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "View Users - A Michael Lenselink Production";
+}
+
+<h1>Users</h1>
+
+<div class="list-group">
+    <form asp-controller="Users" asp-action="List" method="post">
+        <input type="submit" value="View All Users" />
+    </form>
+</div>
+<div>
+    <form asp-controller="Users" asp-action="List" method="post">
+        <p>
+            Search by Last Name: <input type="text" name="id" />
+            <input type="submit" value="Search" />
+        </p>
+    </form>
+</div>
+<div>
+
+    <a asp-controller="Home" asp-action="About">
+        About Us
+    </a>
+</div>
